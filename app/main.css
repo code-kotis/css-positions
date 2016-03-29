@@ -1,4 +1,39 @@
-html, body {
-  height: 100%;
-  margin: 0;
+/*
+	##BEM Approach - http://getbem.com/naming/
+
+	1. Block
+	----------------------------------------------
+
+	Eg: menu
+
+	<ul class="menu"></ul>
+
+	2. Elements
+	----------------------------------------------
+
+	Eg: menu__list
+
+	<ul class="menu">
+  	<li class="menu__list"></li>
+	</ul>
+
+	3. Modifiers
+	----------------------------------------------
+
+	Eg: menu--active
+
+	<ul class="menu">
+  	<li class="menu__list"></li>
+  	<li class="menu__list menu--active"></li>
+	</ul>
+*/
+
+@import 'components/reset.css';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
 }

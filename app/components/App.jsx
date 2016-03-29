@@ -1,4 +1,5 @@
 import React from 'react';
+import Header from './Header.jsx';
 
 require('./App.css');
 
@@ -9,7 +10,7 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <h1>Coming soon</h1>
+      <Header />
     );
   }
 }

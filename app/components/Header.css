@@ -1,0 +1,46 @@
+.logo {
+  font-size: 40px;
+  height: 70px;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 70px;
+}
+
+.logo sup {
+  font-size: 30px;
+}
+
+.menu {
+  background: #F3F6F8;
+  border: 1px solid #E4E4E4;
+  border-left: none;
+  border-right: none;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.menu__list {
+  width: 200px;
+  background: #fff;
+  border-right: 1px solid #E4E4E4;
+  cursor: pointer;
+  flex: 0 1 auto;
+  padding: 20px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.menu__list:first-child {
+  border-left: 1px solid #E4E4E4;
+}
+
+.menu__list span:first-child {
+  color: red;
+}
+
+.menu--active {
+  background: #528FCC;
+  color: #fff;
+}
