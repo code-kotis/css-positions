@@ -28,7 +28,7 @@
 	</ul>
 */
 
-@import 'components/reset.css';
+@import 'reset.css';
 
 * {
   box-sizing: border-box;
