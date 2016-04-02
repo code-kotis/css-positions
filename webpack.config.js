@@ -8,7 +8,7 @@ module.exports = {
         hot: true,
         inline: true,
         progress: true,
-        contentBase: './app/main/',
+        contentBase: './app/main',
         port: 8080
     },
     entry: [
@@ -18,7 +18,7 @@ module.exports = {
     ],
     output: {
         path: __dirname + '/build',
-        publicPath: '/main/',
+        publicPath: 'build',
         filename: './bundle.js'
     },
     module: {
