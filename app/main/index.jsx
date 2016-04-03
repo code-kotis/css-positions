@@ -1,8 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from '../components/Main/index.jsx';
-import { Router, Route, hashHistory } from 'react-router'
-import Header from '../components/Header/index.jsx';
+import { Router, Route, browserHistory } from 'react-router'
 import Static from '../components/Static/index.jsx';
 import Absolute from '../components/Absolute/index.jsx';
 import Sticky from '../components/Sticky/index.jsx';
@@ -10,7 +9,7 @@ import Fixed from '../components/Fixed/index.jsx';
 import Relative from '../components/Relative/index.jsx';
 
 ReactDOM.render(
-		<Router history={hashHistory}>
+		<Router history={browserHistory}>
 			<Route path="/" component={App}>
 				<Route path="/static"   component={Static}/>
 				<Route path="/fixed"    component={Fixed}/>

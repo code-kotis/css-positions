@@ -7,10 +7,6 @@ export default class App extends React.Component {
     super(props);
   }
 
-  static contextTypes = {
-    router: PropTypes.func.isRequired
-  };
-
   render() {
     return (
       <div>
