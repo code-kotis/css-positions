@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 
-export default class Static extends React.Component {
+export default class Relative extends React.Component {
   render() {
     return (
       <div>
