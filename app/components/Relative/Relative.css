@@ -1,0 +1,29 @@
+h2 {
+	font-family: sans-serif;
+	font-size: 15px;
+	margin: 10px;
+	color: rgb(85, 26, 139);
+
+}
+
+:local(.firstImage) { 
+	position: relative;
+	width: 200px;
+	height: 200px;
+}
+
+:local(.secondImage) {
+	position: relative;
+	top: 0px;
+	left: 200px;
+	width: 200px;
+	height: 200px;
+}
+
+:local(.thirdImage) {
+	position: relative;
+	top: 0px;
+	left: 400px;
+	width: 200px;
+	height: 200px;
+}

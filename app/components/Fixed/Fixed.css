@@ -1,0 +1,23 @@
+h2 {
+	font-family: sans-serif;
+	font-size: 15px;
+	margin: 10px;
+	color: rgb(85, 26, 139);
+
+}
+
+:local(.thirdImage) {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 200px;
+	height: 200px;
+}
+
+:local(.fourthImage) {
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	width: 200px;
+	height: 200px;
+}

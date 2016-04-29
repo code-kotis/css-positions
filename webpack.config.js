@@ -9,11 +9,11 @@ module.exports = {
         inline: true,
         progress: true,
         contentBase: './app/main',
-        port: 8080
+        port: 1337
     },
     entry: [
       'webpack/hot/dev-server',
-      'webpack-dev-server/client?http://localhost:8080/',
+      'webpack-dev-server/client?http://localhost:1337/',
       path.resolve(__dirname, 'app/main/index.jsx')
     ],
     output: {
@@ -25,7 +25,7 @@ module.exports = {
         loaders:[
           { test: /\.css$/, include: path.resolve(__dirname, 'app'), loader: 'style-loader!css-loader' },
           { test: /\.js[x]?$/, include: path.resolve(__dirname, 'app'), exclude: /node_modules/, loader: 'babel-loader' },
-          { test: /\.(png|jpg|jpeg|gif)$/, loader: 'url-loader?limit=8192' }
+          { test: /\.(jpe?g|png|gif|svg)$/i, loader: 'url?limit=10000!img?progressive=true'}
         ]
     },
     resolve: {
@@ -33,6 +33,6 @@ module.exports = {
     },
     plugins: [
       new webpack.HotModuleReplacementPlugin(),
-      new OpenBrowserPlugin({ url: 'http://localhost:8080' })
+      new OpenBrowserPlugin({ url: 'http://localhost:1337' })
     ]
 };
